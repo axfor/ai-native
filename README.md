@@ -2,6 +2,14 @@
 
 > **从"写代码"到"指挥 AI 写代码" —— 面向未来的开发范式转型培训**
 
+---
+
+> **清醒认识：AI 正在取代开发者——Block 裁员 40%，Klarna 裁员 47%，初级岗位持续萎缩。**
+> **唯一的出路是转型：从「写代码的人」变成「驾驭 AI 写代码的人」。**
+>
+> 未来的工程师不是被 AI 辅助的程序员，而是指挥 AI 代理军团的架构师。
+> 掌握 Spec-Driven Development + AI Skills + 并行代理工作流，让自己成为不可替代的那个人。
+
 **📖 核心教材：[AI-Native-Development-Training.md](AI-Native-Development-Training.md)**（10 章完整培训内容，含行业案例、工具指南、最佳实践和 90 天落地路线图）
 
 ## Overview
