@@ -2,6 +2,8 @@
 
 > **从"写代码"到"指挥 AI 写代码" —— 面向未来的开发范式转型培训**
 
+**📖 核心教材：[AI-Native-Development-Training.md](AI-Native-Development-Training.md)**（10 章完整培训内容，含行业案例、工具指南、最佳实践和 90 天落地路线图）
+
 ## Overview
 
 本项目是一套部门级 AI Native 开发转型培训教材，包含完整的培训文档、可执行的示例项目和 Prompt 工程模板。目标是帮助开发团队系统性地从传统开发模式转型为 AI Native 开发模式。
