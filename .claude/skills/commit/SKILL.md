@@ -1,9 +1,8 @@
 ---
 name: commit
-description: 生成 git commit，不包含 Co-Authored-By 签名
+description: 生成 git commit，不包含 Co-Authored-By 签名，提交信息使用英文
 disable-model-invocation: true
-allowed-tools: Bash(git *)
-argument-hint: [commit message (optional)]
+argument-hint: "commit message (optional)"
 ---
 
 # Git Commit（无签名）
@@ -16,10 +15,10 @@ argument-hint: [commit message (optional)]
 2. 运行 `git diff --staged` 查看已暂存的变更
 3. 如果没有暂存的变更，将相关修改文件逐个 `git add`（不要用 `git add -A` 或 `git add .`）
 4. 分析变更内容，判断类型：feat / fix / docs / refactor / test / chore
-5. 生成简洁的 Conventional Commit 格式提交信息：
-   - 主题行：`<type>(<scope>): <描述>`（不超过 70 字符）
+5. 生成简洁的 Conventional Commit 格式提交信息（**必须使用英文**）：
+   - 主题行：`<type>(<scope>): <description in English>`（不超过 70 字符）
    - 空行
-   - 正文：解释「为什么」而非「做了什么」（如需要）
+   - 正文：explain "why" not "what"（如需要）
 6. 如果用户提供了 $ARGUMENTS，使用用户提供的信息作为提交信息基础
 7. 执行 `git commit`，**不要**在提交信息中添加任何 Co-Authored-By 行
 8. 运行 `git status` 确认提交成功
@@ -27,9 +26,9 @@ argument-hint: [commit message (optional)]
 ## 提交信息格式
 
 ```
-<type>(<scope>): <简短描述>
+<type>(<scope>): <short description in English>
 
-<详细说明（可选）>
+<detailed explanation in English (optional)>
 ```
 
 ## 注意事项
