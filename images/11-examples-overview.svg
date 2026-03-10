@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 340" xmlns="http://www.w3.org/2000/svg" style="max-width:800px">
+  <defs>
+    <filter id="shadowEx">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+    <linearGradient id="gradEx" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="340" rx="16" fill="#f8f9fe"/>
+  <text x="400" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a2e">五大实战场景 — 传统 vs AI Native</text>
+
+  <!-- Scenario Cards -->
+  <!-- 1 -->
+  <rect x="30" y="55" width="140" height="120" rx="10" fill="white" filter="url(#shadowEx)"/>
+  <rect x="30" y="55" width="140" height="30" rx="10" fill="#667eea"/>
+  <rect x="30" y="72" width="140" height="13" fill="#667eea"/>
+  <text x="100" y="75" text-anchor="middle" font-size="12" font-weight="bold" fill="white">场景 1</text>
+  <text x="100" y="100" text-anchor="middle" font-size="11" fill="#333" font-weight="bold">Bug 修复</text>
+  <text x="100" y="118" text-anchor="middle" font-size="10" fill="#888">传统: 2-4 小时</text>
+  <text x="100" y="135" text-anchor="middle" font-size="10" fill="#4CAF50" font-weight="bold">AI: 5-15 分钟</text>
+  <text x="100" y="160" text-anchor="middle" font-size="18" fill="#667eea" font-weight="bold">16x</text>
+
+  <!-- 2 -->
+  <rect x="185" y="55" width="140" height="120" rx="10" fill="white" filter="url(#shadowEx)"/>
+  <rect x="185" y="55" width="140" height="30" rx="10" fill="#7c6bc4"/>
+  <rect x="185" y="72" width="140" height="13" fill="#7c6bc4"/>
+  <text x="255" y="75" text-anchor="middle" font-size="12" font-weight="bold" fill="white">场景 2</text>
+  <text x="255" y="100" text-anchor="middle" font-size="11" fill="#333" font-weight="bold">新增 API</text>
+  <text x="255" y="118" text-anchor="middle" font-size="10" fill="#888">传统: 1-2 天</text>
+  <text x="255" y="135" text-anchor="middle" font-size="10" fill="#4CAF50" font-weight="bold">AI: 20-40 分钟</text>
+  <text x="255" y="160" text-anchor="middle" font-size="18" fill="#7c6bc4" font-weight="bold">4x</text>
+
+  <!-- 3 -->
+  <rect x="340" y="55" width="140" height="120" rx="10" fill="white" filter="url(#shadowEx)"/>
+  <rect x="340" y="55" width="140" height="30" rx="10" fill="#9159a8"/>
+  <rect x="340" y="72" width="140" height="13" fill="#9159a8"/>
+  <text x="410" y="75" text-anchor="middle" font-size="12" font-weight="bold" fill="white">场景 3</text>
+  <text x="410" y="100" text-anchor="middle" font-size="11" fill="#333" font-weight="bold">单元测试补全</text>
+  <text x="410" y="118" text-anchor="middle" font-size="10" fill="#888">传统: 半天-1天</text>
+  <text x="410" y="135" text-anchor="middle" font-size="10" fill="#4CAF50" font-weight="bold">AI: 10-30 分钟</text>
+  <text x="410" y="160" text-anchor="middle" font-size="18" fill="#9159a8" font-weight="bold">8x</text>
+
+  <!-- 4 -->
+  <rect x="495" y="55" width="140" height="120" rx="10" fill="white" filter="url(#shadowEx)"/>
+  <rect x="495" y="55" width="140" height="30" rx="10" fill="#b8477a"/>
+  <rect x="495" y="72" width="140" height="13" fill="#b8477a"/>
+  <text x="565" y="75" text-anchor="middle" font-size="12" font-weight="bold" fill="white">场景 4</text>
+  <text x="565" y="100" text-anchor="middle" font-size="11" fill="#333" font-weight="bold">代码重构</text>
+  <text x="565" y="118" text-anchor="middle" font-size="10" fill="#888">传统: 2-5 天</text>
+  <text x="565" y="135" text-anchor="middle" font-size="10" fill="#4CAF50" font-weight="bold">AI: 1-3 小时</text>
+  <text x="565" y="160" text-anchor="middle" font-size="18" fill="#b8477a" font-weight="bold">10x</text>
+
+  <!-- 5 -->
+  <rect x="650" y="55" width="120" height="120" rx="10" fill="white" filter="url(#shadowEx)"/>
+  <rect x="650" y="55" width="120" height="30" rx="10" fill="#e94560"/>
+  <rect x="650" y="72" width="120" height="13" fill="#e94560"/>
+  <text x="710" y="75" text-anchor="middle" font-size="12" font-weight="bold" fill="white">场景 5</text>
+  <text x="710" y="100" text-anchor="middle" font-size="11" fill="#333" font-weight="bold">代码审查</text>
+  <text x="710" y="118" text-anchor="middle" font-size="10" fill="#888">传统: 1-2 小时</text>
+  <text x="710" y="135" text-anchor="middle" font-size="10" fill="#4CAF50" font-weight="bold">AI: 2-5 分钟</text>
+  <text x="710" y="160" text-anchor="middle" font-size="18" fill="#e94560" font-weight="bold">20x</text>
+
+  <!-- Bottom: workflow comparison -->
+  <rect x="30" y="195" width="740" height="130" rx="12" fill="white" filter="url(#shadowEx)"/>
+  <text x="400" y="222" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">开发者日常工作时间分配变化</text>
+  <line x1="50" y1="235" x2="750" y2="235" stroke="#eee"/>
+
+  <!-- Before bar -->
+  <text x="60" y="258" font-size="11" fill="#888">传统模式</text>
+  <rect x="150" y="245" width="240" height="20" rx="4" fill="#e94560" opacity="0.7"/>
+  <text x="270" y="259" text-anchor="middle" font-size="9" fill="white">编写样板代码 40%</text>
+  <rect x="390" y="245" width="120" height="20" rx="4" fill="#D97706" opacity="0.7"/>
+  <text x="450" y="259" text-anchor="middle" font-size="9" fill="white">调试 20%</text>
+  <rect x="510" y="245" width="90" height="20" rx="4" fill="#764ba2" opacity="0.7"/>
+  <text x="555" y="259" text-anchor="middle" font-size="9" fill="white">设计 15%</text>
+  <rect x="600" y="245" width="60" height="20" rx="4" fill="#667eea" opacity="0.7"/>
+  <text x="630" y="259" text-anchor="middle" font-size="9" fill="white">Review</text>
+  <rect x="660" y="245" width="90" height="20" rx="4" fill="#4CAF50" opacity="0.7"/>
+  <text x="705" y="259" text-anchor="middle" font-size="9" fill="white">创新 15%</text>
+
+  <!-- After bar -->
+  <text x="60" y="298" font-size="11" fill="#4CAF50" font-weight="bold">AI Native</text>
+  <rect x="150" y="285" width="60" height="20" rx="4" fill="#e94560" opacity="0.4"/>
+  <text x="180" y="299" text-anchor="middle" font-size="9" fill="#666">样板 10%</text>
+  <rect x="210" y="285" width="36" height="20" rx="4" fill="#D97706" opacity="0.4"/>
+  <text x="228" y="299" text-anchor="middle" font-size="9" fill="#666">调试</text>
+  <rect x="246" y="285" width="120" height="20" rx="4" fill="#764ba2" opacity="0.9"/>
+  <text x="306" y="299" text-anchor="middle" font-size="9" fill="white">架构设计 20%</text>
+  <rect x="366" y="285" width="120" height="20" rx="4" fill="#667eea" opacity="0.9"/>
+  <text x="426" y="299" text-anchor="middle" font-size="9" fill="white">AI 协作 &amp; Review 20%</text>
+  <rect x="486" y="285" width="264" height="20" rx="4" fill="#4CAF50" opacity="0.9"/>
+  <text x="618" y="299" text-anchor="middle" font-size="9" fill="white">创新 &amp; 高价值工作 44%</text>
+</svg>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" style="max-width:800px">
+  <defs>
+    <filter id="shadow7">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="800" height="500" rx="16" fill="#f8f9fe"/>
+  <text x="400" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a2e">五大挑战与应对策略</text>
+
+  <!-- Challenge 1 -->
+  <rect x="30" y="55" width="355" height="130" rx="10" fill="white" filter="url(#shadow7)"/>
+  <rect x="30" y="55" width="8" height="130" rx="4" fill="#e94560"/>
+  <text x="55" y="80" font-size="13" font-weight="bold" fill="#e94560">挑战 1: 代码幻觉</text>
+  <text x="55" y="100" font-size="11" fill="#666">76% 开发者遭遇过 AI 幻觉，59% 使用了</text>
+  <text x="55" y="115" font-size="11" fill="#666">自己不完全理解的 AI 代码</text>
+  <rect x="55" y="128" width="310" height="22" rx="4" fill="#f0fff4"/>
+  <text x="65" y="143" font-size="10" fill="#4CAF50" font-weight="bold">→ 强制 Code Review + 自动化测试 + 将 AI 输出视为草稿</text>
+  <text x="55" y="170" font-size="10" fill="#999">不要盲信，要验证</text>
+
+  <!-- Challenge 2 -->
+  <rect x="415" y="55" width="355" height="130" rx="10" fill="white" filter="url(#shadow7)"/>
+  <rect x="415" y="55" width="8" height="130" rx="4" fill="#D97706"/>
+  <text x="440" y="80" font-size="13" font-weight="bold" fill="#D97706">挑战 2: 安全漏洞 (Slopsquatting)</text>
+  <text x="440" y="100" font-size="11" fill="#666">20% AI 生成的代码推荐了不存在的包，</text>
+  <text x="440" y="115" font-size="11" fill="#666">25-30% 包含常见安全弱点 (CWE)</text>
+  <rect x="440" y="128" width="310" height="22" rx="4" fill="#f0fff4"/>
+  <text x="450" y="143" font-size="10" fill="#4CAF50" font-weight="bold">→ CI/CD 包验证 + 依赖审计 + 绝不盲目安装</text>
+  <text x="440" y="170" font-size="10" fill="#999">先验证包存在且安全，再 install</text>
+
+  <!-- Challenge 3 -->
+  <rect x="30" y="200" width="355" height="130" rx="10" fill="white" filter="url(#shadow7)"/>
+  <rect x="30" y="200" width="8" height="130" rx="4" fill="#764ba2"/>
+  <text x="55" y="225" font-size="13" font-weight="bold" fill="#764ba2">挑战 3: 信任度下降</text>
+  <text x="55" y="245" font-size="11" fill="#666">AI 正面评价从 70%+ 降至 60%，</text>
+  <text x="55" y="260" font-size="11" fill="#666">仅 52% 认为 AI 提升了生产力</text>
+  <rect x="55" y="275" width="310" height="22" rx="4" fill="#f0fff4"/>
+  <text x="65" y="290" font-size="10" fill="#4CAF50" font-weight="bold">→ 设定合理预期 + 聚焦可衡量的成果 + 给予选择权</text>
+  <text x="55" y="315" font-size="10" fill="#999">AI 是工具，不是魔法</text>
+
+  <!-- Challenge 4 -->
+  <rect x="415" y="200" width="355" height="130" rx="10" fill="white" filter="url(#shadow7)"/>
+  <rect x="415" y="200" width="8" height="130" rx="4" fill="#2196F3"/>
+  <text x="440" y="225" font-size="13" font-weight="bold" fill="#2196F3">挑战 4: 能力天花板</text>
+  <text x="440" y="245" font-size="11" fill="#666">模型质量在 2025 年出现平台期，</text>
+  <text x="440" y="260" font-size="11" fill="#666">某些任务效率反而下降</text>
+  <rect x="440" y="275" width="310" height="22" rx="4" fill="#f0fff4"/>
+  <text x="450" y="290" font-size="10" fill="#4CAF50" font-weight="bold">→ 保持工具中立 + 持续评估新模型 + 投资上下文质量</text>
+  <text x="440" y="315" font-size="10" fill="#999">好的 CLAUDE.md 比换模型更有用</text>
+
+  <!-- Challenge 5 -->
+  <rect x="30" y="350" width="740" height="130" rx="10" fill="white" filter="url(#shadow7)"/>
+  <rect x="30" y="350" width="8" height="130" rx="4" fill="#333"/>
+  <text x="55" y="375" font-size="13" font-weight="bold" fill="#333">挑战 5: 组织阻力</text>
+  <text x="55" y="395" font-size="11" fill="#666">部分团队成员对 AI 编码持抵触态度，担心被取代或认为 AI 代码质量不够</text>
+
+  <rect x="55" y="410" width="220" height="55" rx="8" fill="#f0f4ff"/>
+  <text x="65" y="430" font-size="10" fill="#667eea" font-weight="bold">领导以身作则</text>
+  <text x="65" y="448" font-size="10" fill="#888">管理层带头使用并分享成果</text>
+
+  <rect x="290" y="410" width="220" height="55" rx="8" fill="#f0f4ff"/>
+  <text x="300" y="430" font-size="10" fill="#667eea" font-weight="bold">纳入职业发展</text>
+  <text x="300" y="448" font-size="10" fill="#888">AI 能力成为晋升加分项</text>
+
+  <rect x="525" y="410" width="220" height="55" rx="8" fill="#f0f4ff"/>
+  <text x="535" y="430" font-size="10" fill="#667eea" font-weight="bold">社区驱动</text>
+  <text x="535" y="448" font-size="10" fill="#888">建立内部分享机制和最佳实践库</text>
+</svg>

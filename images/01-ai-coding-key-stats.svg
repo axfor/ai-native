@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 320" xmlns="http://www.w3.org/2000/svg" style="max-width:800px">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow1">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <rect width="800" height="320" rx="16" fill="#f8f9fe"/>
+  <text x="400" y="40" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a2e">AI Coding 行业关键数据</text>
+  <!-- Card 1 -->
+  <rect x="30" y="65" width="170" height="110" rx="12" fill="white" filter="url(#shadow1)"/>
+  <text x="115" y="105" text-anchor="middle" font-size="36" font-weight="bold" fill="#667eea">84%</text>
+  <text x="115" y="130" text-anchor="middle" font-size="12" fill="#666">开发者正在使用或</text>
+  <text x="115" y="148" text-anchor="middle" font-size="12" fill="#666">计划使用 AI 工具</text>
+  <!-- Card 2 -->
+  <rect x="220" y="65" width="170" height="110" rx="12" fill="white" filter="url(#shadow1)"/>
+  <text x="305" y="105" text-anchor="middle" font-size="36" font-weight="bold" fill="#764ba2">55%</text>
+  <text x="305" y="130" text-anchor="middle" font-size="12" fill="#666">任务完成速度提升</text>
+  <text x="305" y="148" text-anchor="middle" font-size="12" fill="#666">(GitHub Copilot 数据)</text>
+  <!-- Card 3 -->
+  <rect x="410" y="65" width="170" height="110" rx="12" fill="white" filter="url(#shadow1)"/>
+  <text x="495" y="105" text-anchor="middle" font-size="36" font-weight="bold" fill="#e94560">46%</text>
+  <text x="495" y="130" text-anchor="middle" font-size="12" fill="#666">代码由 AI 生成</text>
+  <text x="495" y="148" text-anchor="middle" font-size="12" fill="#666">(Copilot 用户平均)</text>
+  <!-- Card 4 -->
+  <rect x="600" y="65" width="170" height="110" rx="12" fill="white" filter="url(#shadow1)"/>
+  <text x="685" y="105" text-anchor="middle" font-size="36" font-weight="bold" fill="#0f3460">4x</text>
+  <text x="685" y="130" text-anchor="middle" font-size="12" fill="#666">PR 周期缩短</text>
+  <text x="685" y="148" text-anchor="middle" font-size="12" fill="#666">9.6天 → 2.4天</text>
+  <!-- Bottom Cards -->
+  <rect x="30" y="195" width="235" height="100" rx="12" fill="white" filter="url(#shadow1)"/>
+  <text x="147" y="230" text-anchor="middle" font-size="28" font-weight="bold" fill="#667eea">90%</text>
+  <text x="147" y="255" text-anchor="middle" font-size="12" fill="#666">Fortune 100 企业已采用 GitHub Copilot</text>
+  <!-- Card 6 -->
+  <rect x="283" y="195" width="235" height="100" rx="12" fill="white" filter="url(#shadow1)"/>
+  <text x="400" y="230" text-anchor="middle" font-size="28" font-weight="bold" fill="#764ba2">25%+</text>
+  <text x="400" y="255" text-anchor="middle" font-size="12" fill="#666">Google 新代码由 AI 生成</text>
+  <text x="400" y="273" text-anchor="middle" font-size="11" fill="#999">— CEO Sundar Pichai, 2024 Q3</text>
+  <!-- Card 7 -->
+  <rect x="536" y="195" width="235" height="100" rx="12" fill="white" filter="url(#shadow1)"/>
+  <text x="653" y="230" text-anchor="middle" font-size="28" font-weight="bold" fill="#e94560">50万+</text>
+  <text x="653" y="255" text-anchor="middle" font-size="12" fill="#666">TELUS 节省的工程小时数</text>
+  <text x="653" y="273" text-anchor="middle" font-size="11" fill="#999">工程代码交付速度提升 30%</text>
+</svg>

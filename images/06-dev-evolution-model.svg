@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" style="max-width:800px">
+  <defs>
+    <linearGradient id="roadGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e94560;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow4">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  <rect width="800" height="400" rx="16" fill="#f8f9fe"/>
+  <text x="400" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a2e">开发模式演进 — 五级成熟度模型</text>
+
+  <!-- Road -->
+  <rect x="50" y="190" width="700" height="8" rx="4" fill="url(#roadGrad)" opacity="0.3"/>
+
+  <!-- Level 0 -->
+  <rect x="30" y="80" width="120" height="100" rx="10" fill="white" filter="url(#shadow4)" stroke="#667eea" stroke-width="2"/>
+  <text x="90" y="105" text-anchor="middle" font-size="12" font-weight="bold" fill="#667eea">Level 0</text>
+  <text x="90" y="125" text-anchor="middle" font-size="11" fill="#333">传统开发</text>
+  <line x1="50" y1="137" x2="130" y2="137" stroke="#eee"/>
+  <text x="90" y="155" text-anchor="middle" font-size="10" fill="#888">人工编写全部</text>
+  <text x="90" y="170" text-anchor="middle" font-size="10" fill="#888">代码</text>
+  <circle cx="90" cy="194" r="8" fill="#667eea"/>
+  <text x="90" y="197" text-anchor="middle" font-size="8" fill="white">0</text>
+
+  <!-- Level 1 -->
+  <rect x="175" y="80" width="120" height="100" rx="10" fill="white" filter="url(#shadow4)" stroke="#7c6bc4" stroke-width="2"/>
+  <text x="235" y="105" text-anchor="middle" font-size="12" font-weight="bold" fill="#7c6bc4">Level 1</text>
+  <text x="235" y="125" text-anchor="middle" font-size="11" fill="#333">智能补全</text>
+  <line x1="195" y1="137" x2="275" y2="137" stroke="#eee"/>
+  <text x="235" y="155" text-anchor="middle" font-size="10" fill="#888">接受/拒绝行级</text>
+  <text x="235" y="170" text-anchor="middle" font-size="10" fill="#888">代码建议</text>
+  <circle cx="235" cy="194" r="8" fill="#7c6bc4"/>
+  <text x="235" y="197" text-anchor="middle" font-size="8" fill="white">1</text>
+
+  <!-- Level 2 -->
+  <rect x="320" y="80" width="120" height="100" rx="10" fill="white" filter="url(#shadow4)" stroke="#9159a8" stroke-width="2"/>
+  <text x="380" y="105" text-anchor="middle" font-size="12" font-weight="bold" fill="#9159a8">Level 2</text>
+  <text x="380" y="125" text-anchor="middle" font-size="11" fill="#333">交互助手</text>
+  <line x1="340" y1="137" x2="420" y2="137" stroke="#eee"/>
+  <text x="380" y="155" text-anchor="middle" font-size="10" fill="#888">对话生成代码</text>
+  <text x="380" y="170" text-anchor="middle" font-size="10" fill="#888">人工复制粘贴</text>
+  <circle cx="380" cy="194" r="8" fill="#9159a8"/>
+  <text x="380" y="197" text-anchor="middle" font-size="8" fill="white">2</text>
+
+  <!-- Level 3 -->
+  <rect x="465" y="80" width="120" height="100" rx="10" fill="white" filter="url(#shadow4)" stroke="#b8477a" stroke-width="2"/>
+  <text x="525" y="105" text-anchor="middle" font-size="12" font-weight="bold" fill="#b8477a">Level 3</text>
+  <text x="525" y="125" text-anchor="middle" font-size="11" fill="#333">监督式代理</text>
+  <line x1="485" y1="137" x2="565" y2="137" stroke="#eee"/>
+  <text x="525" y="155" text-anchor="middle" font-size="10" fill="#888">AI 读写文件</text>
+  <text x="525" y="170" text-anchor="middle" font-size="10" fill="#888">每步需人工确认</text>
+  <circle cx="525" cy="194" r="8" fill="#b8477a"/>
+  <text x="525" y="197" text-anchor="middle" font-size="8" fill="white">3</text>
+
+  <!-- Level 4 - highlighted -->
+  <rect x="610" y="65" width="150" height="120" rx="10" fill="#fff5f5" filter="url(#shadow4)" stroke="#e94560" stroke-width="3"/>
+  <text x="685" y="90" text-anchor="middle" font-size="12" font-weight="bold" fill="#e94560">Level 4 ★</text>
+  <text x="685" y="110" text-anchor="middle" font-size="11" fill="#333">自主代理</text>
+  <line x1="630" y1="122" x2="740" y2="122" stroke="#fee"/>
+  <text x="685" y="140" text-anchor="middle" font-size="10" fill="#888">AI 自主执行多步</text>
+  <text x="685" y="155" text-anchor="middle" font-size="10" fill="#888">计划，人工审查</text>
+  <text x="685" y="170" text-anchor="middle" font-size="10" fill="#888">最终结果</text>
+  <circle cx="685" cy="194" r="8" fill="#e94560"/>
+  <text x="685" y="197" text-anchor="middle" font-size="8" fill="white">4</text>
+
+  <!-- Current position arrow -->
+  <text x="605" y="225" font-size="10" fill="#e94560" font-weight="bold">← 当前行业主流正在从 L2-3 迈向 L3-4</text>
+
+  <!-- Bottom: Role evolution -->
+  <rect x="50" y="260" width="700" height="120" rx="12" fill="white" filter="url(#shadow4)"/>
+  <text x="400" y="288" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">开发者角色演变</text>
+  <line x1="70" y1="300" x2="730" y2="300" stroke="#eee"/>
+
+  <text x="90" y="325" text-anchor="middle" font-size="11" fill="#667eea" font-weight="bold">代码编写者</text>
+  <text x="90" y="345" text-anchor="middle" font-size="10" fill="#888">亲手写每一行</text>
+  <text x="200" y="330" text-anchor="middle" font-size="16" fill="#ccc">→</text>
+
+  <text x="280" y="325" text-anchor="middle" font-size="11" fill="#9159a8" font-weight="bold">AI 协作者</text>
+  <text x="280" y="345" text-anchor="middle" font-size="10" fill="#888">与 AI 结对编程</text>
+  <text x="370" y="330" text-anchor="middle" font-size="16" fill="#ccc">→</text>
+
+  <text x="470" y="325" text-anchor="middle" font-size="11" fill="#b8477a" font-weight="bold">AI 指挥官</text>
+  <text x="470" y="345" text-anchor="middle" font-size="10" fill="#888">指定意图，审查产出</text>
+  <text x="570" y="330" text-anchor="middle" font-size="16" fill="#ccc">→</text>
+
+  <text x="670" y="325" text-anchor="middle" font-size="11" fill="#e94560" font-weight="bold">代理编排者</text>
+  <text x="670" y="345" text-anchor="middle" font-size="10" fill="#888">并行管理多个 AI 代理</text>
+</svg>

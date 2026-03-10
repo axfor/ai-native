@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 280" xmlns="http://www.w3.org/2000/svg" style="max-width:800px">
+  <defs>
+    <filter id="shadowJr">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="800" height="280" rx="16" fill="#fffbeb"/>
+  <text x="400" y="35" text-anchor="middle" font-size="18" font-weight="bold" fill="#92400e">初级开发者就业市场遇冷</text>
+
+  <!-- Bar chart -->
+  <text x="60" y="70" font-size="12" fill="#666">美国应届生失业率 vs 全国平均</text>
+
+  <!-- Computer Engineering -->
+  <text x="60" y="105" font-size="11" fill="#555">计算机工程</text>
+  <rect x="200" y="90" width="300" height="22" rx="4" fill="#dc2626" opacity="0.8"/>
+  <text x="510" y="106" font-size="12" fill="#dc2626" font-weight="bold">7.5%</text>
+
+  <!-- Computer Science -->
+  <text x="60" y="140" font-size="11" fill="#555">计算机科学</text>
+  <rect x="200" y="125" width="244" height="22" rx="4" fill="#f97316" opacity="0.8"/>
+  <text x="454" y="141" font-size="12" fill="#f97316" font-weight="bold">6.1%</text>
+
+  <!-- US Average -->
+  <text x="60" y="175" font-size="11" fill="#555">全国平均</text>
+  <rect x="200" y="160" width="172" height="22" rx="4" fill="#6b7280" opacity="0.6"/>
+  <text x="382" y="176" font-size="12" fill="#6b7280" font-weight="bold">4.3%</text>
+
+  <!-- Key insights -->
+  <rect x="30" y="200" width="740" height="65" rx="10" fill="white" filter="url(#shadowJr)"/>
+  <text x="50" y="225" font-size="12" fill="#92400e" font-weight="bold">为什么初级开发者受冲击最大？</text>
+  <text x="50" y="248" font-size="11" fill="#555">• AI 最擅长处理的恰恰是初级开发者的典型工作：样板代码、调试、简单功能实现、文档编写</text>
+  <text x="50" y="265" font-size="11" fill="#555">• 一名资深工程师 + AI 工具 = 过去 3 人团队的产出 → 企业不再需要那么多入门级岗位</text>
+</svg>

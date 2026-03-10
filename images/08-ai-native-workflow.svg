@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 580" xmlns="http://www.w3.org/2000/svg" style="max-width:800px">
+  <defs>
+    <filter id="shadow6">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#667eea" />
+    </marker>
+  </defs>
+  <rect width="800" height="580" rx="16" fill="#f8f9fe"/>
+  <text x="400" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a2e">AI Native 开发工作流</text>
+
+  <!-- Phase 1: Plan -->
+  <rect x="30" y="55" width="230" height="240" rx="12" fill="white" filter="url(#shadow6)"/>
+  <rect x="30" y="55" width="230" height="40" rx="12" fill="#667eea"/>
+  <rect x="30" y="80" width="230" height="15" fill="#667eea"/>
+  <text x="145" y="80" text-anchor="middle" font-size="14" font-weight="bold" fill="white">Phase 1: 规划</text>
+  <text x="50" y="120" font-size="12" fill="#333" font-weight="bold">人类主导</text>
+  <text x="50" y="145" font-size="11" fill="#666">1. 明确需求和验收标准</text>
+  <text x="50" y="165" font-size="11" fill="#666">2. 编写 Spec 文档</text>
+  <text x="50" y="185" font-size="11" fill="#666">3. 拆解任务到可执行粒度</text>
+  <text x="50" y="215" font-size="12" fill="#333" font-weight="bold">AI 辅助</text>
+  <text x="50" y="240" font-size="11" fill="#666">• 生成技术方案草稿</text>
+  <text x="50" y="260" font-size="11" fill="#666">• 评估实现可行性</text>
+  <text x="50" y="280" font-size="11" fill="#666">• 识别潜在风险</text>
+
+  <!-- Arrow 1 -->
+  <line x1="270" y1="175" x2="290" y2="175" stroke="#667eea" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Phase 2: Build -->
+  <rect x="295" y="55" width="230" height="240" rx="12" fill="white" filter="url(#shadow6)"/>
+  <rect x="295" y="55" width="230" height="40" rx="12" fill="#764ba2"/>
+  <rect x="295" y="80" width="230" height="15" fill="#764ba2"/>
+  <text x="410" y="80" text-anchor="middle" font-size="14" font-weight="bold" fill="white">Phase 2: 构建</text>
+  <text x="315" y="120" font-size="12" fill="#333" font-weight="bold">AI 主导</text>
+  <text x="315" y="145" font-size="11" fill="#666">1. AI 分析代码库上下文</text>
+  <text x="315" y="165" font-size="11" fill="#666">2. 生成实现代码</text>
+  <text x="315" y="185" font-size="11" fill="#666">3. 自动编写测试</text>
+  <text x="315" y="205" font-size="11" fill="#666">4. 运行并修复测试</text>
+  <text x="315" y="235" font-size="12" fill="#333" font-weight="bold">人类参与</text>
+  <text x="315" y="260" font-size="11" fill="#666">• 在关键决策点给予指导</text>
+  <text x="315" y="280" font-size="11" fill="#666">• 调整方向和优先级</text>
+
+  <!-- Arrow 2 -->
+  <line x1="535" y1="175" x2="555" y2="175" stroke="#764ba2" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Phase 3: Review -->
+  <rect x="560" y="55" width="210" height="240" rx="12" fill="white" filter="url(#shadow6)"/>
+  <rect x="560" y="55" width="210" height="40" rx="12" fill="#e94560"/>
+  <rect x="560" y="80" width="210" height="15" fill="#e94560"/>
+  <text x="665" y="80" text-anchor="middle" font-size="14" font-weight="bold" fill="white">Phase 3: 审查</text>
+  <text x="580" y="120" font-size="12" fill="#333" font-weight="bold">人类主导</text>
+  <text x="580" y="145" font-size="11" fill="#666">1. Code Review</text>
+  <text x="580" y="165" font-size="11" fill="#666">2. 安全性检查</text>
+  <text x="580" y="185" font-size="11" fill="#666">3. 架构合理性验证</text>
+  <text x="580" y="215" font-size="12" fill="#333" font-weight="bold">AI 辅助</text>
+  <text x="580" y="240" font-size="11" fill="#666">• 自动化代码审查</text>
+  <text x="580" y="260" font-size="11" fill="#666">• 安全漏洞扫描</text>
+  <text x="580" y="280" font-size="11" fill="#666">• 性能分析建议</text>
+
+  <!-- Bottom: Golden rules -->
+  <rect x="30" y="320" width="740" height="245" rx="12" fill="white" filter="url(#shadow6)"/>
+  <text x="400" y="350" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">黄金法则</text>
+  <line x1="50" y1="365" x2="750" y2="365" stroke="#eee"/>
+
+  <rect x="50" y="380" width="340" height="40" rx="8" fill="#f0f4ff"/>
+  <text x="70" y="405" font-size="12" fill="#667eea" font-weight="bold">1. AI 生成的代码 = 需要 Review 的代码</text>
+
+  <rect x="410" y="380" width="340" height="40" rx="8" fill="#f0f4ff"/>
+  <text x="430" y="405" font-size="12" fill="#667eea" font-weight="bold">2. Prompt 质量决定产出质量</text>
+
+  <rect x="50" y="430" width="340" height="40" rx="8" fill="#fff5f5"/>
+  <text x="70" y="455" font-size="12" fill="#e94560" font-weight="bold">3. 先验证 AI 建议的包是否真实存在</text>
+
+  <rect x="410" y="430" width="340" height="40" rx="8" fill="#fff5f5"/>
+  <text x="430" y="455" font-size="12" fill="#e94560" font-weight="bold">4. 安全审查不能跳过</text>
+
+  <rect x="50" y="480" width="340" height="40" rx="8" fill="#f0fff4"/>
+  <text x="70" y="505" font-size="12" fill="#4CAF50" font-weight="bold">5. 用 CLAUDE.md 建立项目上下文</text>
+
+  <rect x="410" y="480" width="340" height="40" rx="8" fill="#f0fff4"/>
+  <text x="430" y="505" font-size="12" fill="#4CAF50" font-weight="bold">6. 测试是 AI 代码的安全网</text>
+
+  <rect x="50" y="530" width="700" height="30" rx="8" fill="#fffbeb"/>
+  <text x="400" y="550" text-anchor="middle" font-size="12" fill="#D97706" font-weight="bold">7. 从低风险场景（测试生成、文档、样板代码）开始，逐步扩展到核心业务逻辑</text>
+</svg>

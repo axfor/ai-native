@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 540" xmlns="http://www.w3.org/2000/svg" style="max-width:800px">
+  <defs>
+    <filter id="shadowLayoff">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="800" height="540" rx="16" fill="#fef2f2"/>
+  <text x="400" y="38" text-anchor="middle" font-size="20" font-weight="bold" fill="#991b1b">AI 驱动裁员：全球关键数据</text>
+
+  <!-- Top stats bar -->
+  <rect x="30" y="55" width="170" height="90" rx="12" fill="white" filter="url(#shadowLayoff)"/>
+  <text x="115" y="88" text-anchor="middle" font-size="30" font-weight="bold" fill="#dc2626">10万+</text>
+  <text x="115" y="110" text-anchor="middle" font-size="11" fill="#666">2025年AI驱动裁员人数</text>
+  <text x="115" y="128" text-anchor="middle" font-size="10" fill="#999">45+ CEO 公开引用 AI 为原因</text>
+
+  <rect x="220" y="55" width="170" height="90" rx="12" fill="white" filter="url(#shadowLayoff)"/>
+  <text x="305" y="88" text-anchor="middle" font-size="30" font-weight="bold" fill="#dc2626">27.5%</text>
+  <text x="305" y="110" text-anchor="middle" font-size="11" fill="#666">美国程序员就业率下降</text>
+  <text x="305" y="128" text-anchor="middle" font-size="10" fill="#999">美国劳工统计局数据</text>
+
+  <rect x="410" y="55" width="170" height="90" rx="12" fill="white" filter="url(#shadowLayoff)"/>
+  <text x="495" y="88" text-anchor="middle" font-size="30" font-weight="bold" fill="#dc2626">60%</text>
+  <text x="495" y="110" text-anchor="middle" font-size="11" fill="#666">企业计划 2026 年裁员</text>
+  <text x="495" y="128" text-anchor="middle" font-size="10" fill="#999">其中 40% 计划用 AI 替代</text>
+
+  <rect x="600" y="55" width="170" height="90" rx="12" fill="white" filter="url(#shadowLayoff)"/>
+  <text x="685" y="88" text-anchor="middle" font-size="30" font-weight="bold" fill="#dc2626">~20%</text>
+  <text x="685" y="110" text-anchor="middle" font-size="11" fill="#666">22-25岁程序员就业率降幅</text>
+  <text x="685" y="128" text-anchor="middle" font-size="10" fill="#999">斯坦福大学研究 (自2022)</text>
+
+  <!-- Company cards -->
+  <!-- Block -->
+  <rect x="30" y="165" width="235" height="170" rx="12" fill="white" filter="url(#shadowLayoff)"/>
+  <rect x="30" y="165" width="235" height="6" rx="3" fill="#dc2626"/>
+  <text x="50" y="195" font-size="16" font-weight="bold" fill="#333">Block (Square)</text>
+  <text x="240" y="195" text-anchor="end" font-size="10" fill="#dc2626" font-weight="bold">裁员 40%</text>
+  <line x1="50" y1="205" x2="245" y2="205" stroke="#fee"/>
+  <text x="50" y="222" font-size="11" fill="#555">• 从 10,000+ 人裁至不足 6,000 人</text>
+  <text x="50" y="240" font-size="11" fill="#555">• CEO Jack Dorsey 宣布转型</text>
+  <text x="50" y="258" font-size="11" fill="#555">  「AI原生公司」</text>
+  <text x="50" y="276" font-size="11" fill="#555">• 内部 AI 编码工具 "Goose"</text>
+  <text x="50" y="294" font-size="11" fill="#555">  替代大量开发工作</text>
+  <text x="50" y="318" font-size="10" fill="#999">2026年2月 · 澎湃新闻</text>
+
+  <!-- Microsoft -->
+  <rect x="283" y="165" width="235" height="170" rx="12" fill="white" filter="url(#shadowLayoff)"/>
+  <rect x="283" y="165" width="235" height="6" rx="3" fill="#0078d4"/>
+  <text x="303" y="195" font-size="16" font-weight="bold" fill="#333">Microsoft</text>
+  <text x="498" y="195" text-anchor="end" font-size="10" fill="#0078d4" font-weight="bold">裁员 15,000+</text>
+  <line x1="303" y1="205" x2="498" y2="205" stroke="#e0f0ff"/>
+  <text x="303" y="222" font-size="11" fill="#555">• 程序员承受最大裁员冲击</text>
+  <text x="303" y="240" font-size="11" fill="#555">• 40% 裁员岗位为开发人员</text>
+  <text x="303" y="258" font-size="11" fill="#555">• AI 已编写 30% 的新代码</text>
+  <text x="303" y="276" font-size="11" fill="#555">• CEO: AI 减少了对支持</text>
+  <text x="303" y="294" font-size="11" fill="#555">  团队层级的需求</text>
+  <text x="303" y="318" font-size="10" fill="#999">2025年5月 · TechCrunch</text>
+
+  <!-- Klarna -->
+  <rect x="536" y="165" width="235" height="170" rx="12" fill="white" filter="url(#shadowLayoff)"/>
+  <rect x="536" y="165" width="235" height="6" rx="3" fill="#ffb3c7"/>
+  <text x="556" y="195" font-size="16" font-weight="bold" fill="#333">Klarna</text>
+  <text x="751" y="195" text-anchor="end" font-size="10" fill="#e91e8c" font-weight="bold">裁员 ~50%</text>
+  <line x1="556" y1="205" x2="751" y2="205" stroke="#fff0f5"/>
+  <text x="556" y="222" font-size="11" fill="#555">• 从 5,527 人降至 ~2,907 人</text>
+  <text x="556" y="240" font-size="11" fill="#555">• AI 替代 853 名全职员工工作</text>
+  <text x="556" y="258" font-size="11" fill="#555">• AI 聊天机器人替代 700 客服</text>
+  <text x="556" y="276" font-size="11" fill="#dc2626" font-weight="bold">⚠ 后因质量下降被迫重新招人</text>
+  <text x="556" y="294" font-size="11" fill="#555">• CEO承认「走得太远了」</text>
+  <text x="556" y="318" font-size="10" fill="#999">2025年 · CNBC / Fast Company</text>
+
+  <!-- Duolingo -->
+  <rect x="30" y="355" width="235" height="170" rx="12" fill="white" filter="url(#shadowLayoff)"/>
+  <rect x="30" y="355" width="235" height="6" rx="3" fill="#58cc02"/>
+  <text x="50" y="385" font-size="16" font-weight="bold" fill="#333">Duolingo</text>
+  <text x="240" y="385" text-anchor="end" font-size="10" fill="#58cc02" font-weight="bold">AI-First 转型</text>
+  <line x1="50" y1="395" x2="245" y2="395" stroke="#e8ffe0"/>
+  <text x="50" y="412" font-size="11" fill="#555">• CEO 宣布成为「AI-First」公司</text>
+  <text x="50" y="430" font-size="11" fill="#555">• 逐步停用 AI 可替代的外包</text>
+  <text x="50" y="448" font-size="11" fill="#555">• 已替代 ~100 名翻译和写手</text>
+  <text x="50" y="466" font-size="11" fill="#555">• 2023 年先裁 10% 外包人员</text>
+  <text x="50" y="484" font-size="11" fill="#555">• 2024 年再裁一轮写手</text>
+  <text x="50" y="508" font-size="10" fill="#999">2024-2025年 · CNN / TechCrunch</text>
+
+  <!-- Intel -->
+  <rect x="283" y="355" width="235" height="170" rx="12" fill="white" filter="url(#shadowLayoff)"/>
+  <rect x="283" y="355" width="235" height="6" rx="3" fill="#0071c5"/>
+  <text x="303" y="385" font-size="16" font-weight="bold" fill="#333">Intel</text>
+  <text x="498" y="385" text-anchor="end" font-size="10" fill="#0071c5" font-weight="bold">裁员 ~21,000</text>
+  <line x1="303" y1="395" x2="498" y2="395" stroke="#e0f0ff"/>
+  <text x="303" y="412" font-size="11" fill="#555">• 裁员占总员工 15-20%</text>
+  <text x="303" y="430" font-size="11" fill="#555">• AI 战略重组驱动</text>
+  <text x="303" y="448" font-size="11" fill="#555">• 转向 AI 芯片研发聚焦</text>
+  <text x="303" y="466" font-size="11" fill="#555">• 传统业务部门大幅缩减</text>
+  <text x="303" y="508" font-size="10" fill="#999">2025年 · 多家媒体</text>
+
+  <!-- Meta -->
+  <rect x="536" y="355" width="235" height="170" rx="12" fill="white" filter="url(#shadowLayoff)"/>
+  <rect x="536" y="355" width="235" height="6" rx="3" fill="#0668E1"/>
+  <text x="556" y="385" font-size="16" font-weight="bold" fill="#333">Meta</text>
+  <text x="751" y="385" text-anchor="end" font-size="10" fill="#0668E1" font-weight="bold">裁员 3,600+</text>
+  <line x1="556" y1="395" x2="751" y2="395" stroke="#e0f0ff"/>
+  <text x="556" y="412" font-size="11" fill="#555">• 2025 年初裁减 3,600 岗位</text>
+  <text x="556" y="430" font-size="11" fill="#555">• AI 重组驱动效率提升</text>
+  <text x="556" y="448" font-size="11" fill="#555">• 低绩效员工优先裁撤</text>
+  <text x="556" y="466" font-size="11" fill="#555">• 同时加大 AI 研发招聘</text>
+  <text x="556" y="508" font-size="10" fill="#999">2025年 · 多家媒体</text>
+</svg>

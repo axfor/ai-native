@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" style="max-width:800px">
+  <defs>
+    <filter id="shadow2">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="800" height="520" rx="16" fill="#f0f4f8"/>
+  <text x="400" y="38" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a2e">标杆企业 AI Coding 实践</text>
+
+  <!-- Shopify -->
+  <rect x="30" y="60" width="355" height="200" rx="12" fill="white" filter="url(#shadow2)"/>
+  <rect x="30" y="60" width="355" height="6" rx="3" fill="#96bf48"/>
+  <text x="50" y="92" font-size="18" font-weight="bold" fill="#333">Shopify</text>
+  <text x="145" y="92" font-size="11" fill="white" ><tspan dx="-2" dy="-2">
+    <rect x="130" y="78" width="60" height="18" rx="9" fill="#96bf48"/>
+  </tspan></text>
+  <text x="160" y="91" text-anchor="middle" font-size="10" fill="white" font-weight="bold">标杆</text>
+  <line x1="50" y1="105" x2="365" y2="105" stroke="#eee" stroke-width="1"/>
+  <text x="50" y="126" font-size="12" fill="#555">• CEO 内部信：AI 使用是「基本期望」</text>
+  <text x="50" y="148" font-size="12" fill="#555">• 招人前必须证明 AI 无法完成该工作</text>
+  <text x="50" y="170" font-size="12" fill="#555">• AI 能力纳入绩效考核</text>
+  <text x="50" y="192" font-size="12" fill="#555">• 标准工具：Copilot + Claude + Cursor</text>
+  <text x="50" y="214" font-size="12" fill="#555">• 在 ChatGPT 发布前一年就引入 Copilot</text>
+  <text x="50" y="240" font-size="11" fill="#96bf48" font-weight="bold">「每个人都应该把 AI 当作自己的倍增器」</text>
+
+  <!-- Google -->
+  <rect x="415" y="60" width="355" height="200" rx="12" fill="white" filter="url(#shadow2)"/>
+  <rect x="415" y="60" width="355" height="6" rx="3" fill="#4285f4"/>
+  <text x="435" y="92" font-size="18" font-weight="bold" fill="#333">Google</text>
+  <line x1="435" y1="105" x2="750" y2="105" stroke="#eee" stroke-width="1"/>
+  <text x="435" y="126" font-size="12" fill="#555">• 25%+ 新代码由 AI 生成</text>
+  <text x="435" y="148" font-size="12" fill="#555">• 工程速度提升约 10%</text>
+  <text x="435" y="170" font-size="12" fill="#555">• CEO 强调：提升的是速度而非裁员</text>
+  <text x="435" y="192" font-size="12" fill="#555">• 计划招更多工程师配合 AI 扩大产出</text>
+  <text x="435" y="240" font-size="11" fill="#4285f4" font-weight="bold">AI 帮助工程师做更多，而非取代工程师</text>
+
+  <!-- HUB International -->
+  <rect x="30" y="280" width="355" height="220" rx="12" fill="white" filter="url(#shadow2)"/>
+  <rect x="30" y="280" width="355" height="6" rx="3" fill="#e94560"/>
+  <text x="50" y="315" font-size="18" font-weight="bold" fill="#333">HUB International</text>
+  <line x1="50" y1="328" x2="365" y2="328" stroke="#eee" stroke-width="1"/>
+  <text x="50" y="349" font-size="12" fill="#555">• 20,000 名员工部署 Claude</text>
+  <text x="50" y="371" font-size="12" fill="#555">• 目标场景生产力提升 85%</text>
+  <text x="50" y="393" font-size="12" fill="#555">• 人均每周节省 2.5 小时</text>
+  <text x="50" y="415" font-size="12" fill="#555">• 用户满意度 90%+</text>
+  <text x="50" y="470" font-size="11" fill="#e94560" font-weight="bold">大规模部署的成功范例</text>
+
+  <!-- TELUS + Zapier -->
+  <rect x="415" y="280" width="355" height="220" rx="12" fill="white" filter="url(#shadow2)"/>
+  <rect x="415" y="280" width="355" height="6" rx="3" fill="#764ba2"/>
+  <text x="435" y="315" font-size="18" font-weight="bold" fill="#333">TELUS &amp; Zapier</text>
+  <line x1="435" y1="328" x2="750" y2="328" stroke="#eee" stroke-width="1"/>
+  <text x="435" y="349" font-size="14" font-weight="bold" fill="#764ba2">TELUS</text>
+  <text x="435" y="371" font-size="12" fill="#555">• 创建 13,000+ 自定义 AI 方案</text>
+  <text x="435" y="393" font-size="12" fill="#555">• 代码交付速度提升 30%</text>
+  <text x="435" y="415" font-size="12" fill="#555">• 累计节省 500,000+ 工时</text>
+  <text x="435" y="445" font-size="14" font-weight="bold" fill="#764ba2">Zapier</text>
+  <text x="435" y="467" font-size="12" fill="#555">• 全组织 AI 采用率达 97%</text>
+  <text x="435" y="489" font-size="12" fill="#555">• 行业最高普及率之一</text>
+</svg>
