@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 900 740" xmlns="http://www.w3.org/2000/svg" style="max-width:900px">
+  <defs>
+    <filter id="shadow12">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrow12" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#667eea"/>
+    </marker>
+    <marker id="arrow12w" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="white"/>
+    </marker>
+    <linearGradient id="grad0" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#667eea"/><stop offset="100%" stop-color="#764ba2"/>
+    </linearGradient>
+    <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#667eea"/><stop offset="100%" stop-color="#5a67d8"/>
+    </linearGradient>
+    <linearGradient id="grad2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#764ba2"/><stop offset="100%" stop-color="#6b46c1"/>
+    </linearGradient>
+    <linearGradient id="grad3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e94560"/><stop offset="100%" stop-color="#d63384"/>
+    </linearGradient>
+    <linearGradient id="grad4" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f59e0b"/><stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="grad5" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#10b981"/><stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="grad6" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3b82f6"/><stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="grad7" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8b5cf6"/><stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="740" rx="16" fill="#f8f9fe"/>
+
+  <!-- Title bar -->
+  <rect x="0" y="0" width="900" height="55" rx="16" fill="url(#grad0)"/>
+  <rect x="0" y="30" width="900" height="25" fill="url(#grad0)"/>
+  <text x="450" y="37" text-anchor="middle" font-size="20" font-weight="bold" fill="white">AI-Native 开发全流程：从需求到交付</text>
+
+  <!-- Step 0: Knowledge Base -->
+  <rect x="30" y="75" width="200" height="120" rx="12" fill="white" filter="url(#shadow12)"/>
+  <rect x="30" y="75" width="200" height="36" rx="12" fill="url(#grad1)"/>
+  <rect x="30" y="97" width="200" height="14" fill="url(#grad1)"/>
+  <text x="130" y="98" text-anchor="middle" font-size="13" font-weight="bold" fill="white">Step 0: 知识库</text>
+  <text x="50" y="130" font-size="11" fill="#555">/kb-init</text>
+  <text x="50" y="150" font-size="10" fill="#888">扫描代码仓库</text>
+  <text x="50" y="167" font-size="10" fill="#888">生成项目上下文</text>
+  <rect x="50" y="175" width="160" height="14" rx="4" fill="#eef2ff"/>
+  <text x="130" y="185" text-anchor="middle" font-size="9" fill="#667eea">doc/kb/</text>
+
+  <!-- Arrow 0->1 -->
+  <line x1="235" y1="135" x2="260" y2="135" stroke="#667eea" stroke-width="2" marker-end="url(#arrow12)"/>
+
+  <!-- Step 1: Requirements -->
+  <rect x="265" y="75" width="200" height="120" rx="12" fill="white" filter="url(#shadow12)"/>
+  <rect x="265" y="75" width="200" height="36" rx="12" fill="url(#grad2)"/>
+  <rect x="265" y="97" width="200" height="14" fill="url(#grad2)"/>
+  <text x="365" y="98" text-anchor="middle" font-size="13" font-weight="bold" fill="white">Step 1: 需求分析</text>
+  <text x="285" y="130" font-size="11" fill="#555">/ai-business-analyst</text>
+  <text x="285" y="147" font-size="11" fill="#555">/system-analyst</text>
+  <text x="285" y="164" font-size="11" fill="#555">/gen-requirement-from-sysreq</text>
+  <rect x="285" y="175" width="160" height="14" rx="4" fill="#f5f0ff"/>
+  <text x="365" y="185" text-anchor="middle" font-size="9" fill="#764ba2">doc/requirement/requirement.md</text>
+
+  <!-- Arrow 1->2 -->
+  <line x1="470" y1="135" x2="495" y2="135" stroke="#764ba2" stroke-width="2" marker-end="url(#arrow12)"/>
+
+  <!-- Step 2: Design -->
+  <rect x="500" y="75" width="180" height="120" rx="12" fill="white" filter="url(#shadow12)"/>
+  <rect x="500" y="75" width="180" height="36" rx="12" fill="url(#grad3)"/>
+  <rect x="500" y="97" width="180" height="14" fill="url(#grad3)"/>
+  <text x="590" y="98" text-anchor="middle" font-size="13" font-weight="bold" fill="white">Step 2: 方案设计</text>
+  <text x="520" y="130" font-size="11" fill="#555">/module-designer</text>
+  <text x="520" y="150" font-size="10" fill="#888">概要设计 + 接口设计</text>
+  <rect x="520" y="162" width="140" height="14" rx="4" fill="#fff5f5"/>
+  <text x="590" y="172" text-anchor="middle" font-size="9" fill="#e94560">doc/design/tech_design.md</text>
+  <rect x="520" y="178" width="140" height="14" rx="4" fill="#fff5f5"/>
+  <text x="590" y="188" text-anchor="middle" font-size="9" fill="#e94560">doc/design/api_design.md</text>
+
+  <!-- Arrow 2->3 -->
+  <line x1="685" y1="135" x2="710" y2="135" stroke="#e94560" stroke-width="2" marker-end="url(#arrow12)"/>
+
+  <!-- Step 3: Test Cases -->
+  <rect x="715" y="75" width="160" height="120" rx="12" fill="white" filter="url(#shadow12)"/>
+  <rect x="715" y="75" width="160" height="36" rx="12" fill="url(#grad4)"/>
+  <rect x="715" y="97" width="160" height="14" fill="url(#grad4)"/>
+  <text x="795" y="98" text-anchor="middle" font-size="13" font-weight="bold" fill="white">Step 3: 测试用例</text>
+  <text x="735" y="130" font-size="11" fill="#555">/generate-interface-</text>
+  <text x="735" y="147" font-size="11" fill="#555"> testcases</text>
+  <rect x="735" y="162" width="120" height="14" rx="4" fill="#fffbeb"/>
+  <text x="795" y="172" text-anchor="middle" font-size="9" fill="#d97706">doc/testcase/testcase.md</text>
+
+  <!-- Review Gate -->
+  <rect x="250" y="215" width="530" height="35" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="515" y="237" text-anchor="middle" font-size="12" font-weight="bold" fill="#92400e">&#x26A0; 人工评审关卡：需求文档 + 概要设计 需评审通过后方可进入 Step 4</text>
+
+  <!-- Down arrow to Step 4 row -->
+  <line x1="450" y1="255" x2="450" y2="285" stroke="#667eea" stroke-width="2" marker-end="url(#arrow12)"/>
+
+  <!-- Step 4: Development -->
+  <rect x="30" y="290" width="260" height="140" rx="12" fill="white" filter="url(#shadow12)"/>
+  <rect x="30" y="290" width="260" height="36" rx="12" fill="url(#grad5)"/>
+  <rect x="30" y="312" width="260" height="14" fill="url(#grad5)"/>
+  <text x="160" y="313" text-anchor="middle" font-size="13" font-weight="bold" fill="white">Step 4: 模块开发</text>
+  <text x="50" y="347" font-size="11" fill="#555">/refine-design</text>
+  <text x="180" y="347" font-size="10" fill="#888">细化详设</text>
+  <text x="50" y="367" font-size="11" fill="#555">/generate-tasks</text>
+  <text x="180" y="367" font-size="10" fill="#888">任务拆分</text>
+  <text x="50" y="387" font-size="11" fill="#555">/execute-tasks</text>
+  <text x="180" y="387" font-size="10" fill="#888">AI 逐步实现</text>
+  <rect x="50" y="400" width="220" height="18" rx="4" fill="#ecfdf5"/>
+  <text x="160" y="413" text-anchor="middle" font-size="10" fill="#059669" font-weight="bold">产出: 业务代码 (git diff)</text>
+
+  <!-- Arrow 4->5 -->
+  <line x1="295" y1="360" x2="330" y2="360" stroke="#10b981" stroke-width="2" marker-end="url(#arrow12)"/>
+
+  <!-- Step 5: Lint & Fix -->
+  <rect x="335" y="290" width="230" height="140" rx="12" fill="white" filter="url(#shadow12)"/>
+  <rect x="335" y="290" width="230" height="36" rx="12" fill="url(#grad6)"/>
+  <rect x="335" y="312" width="230" height="14" fill="url(#grad6)"/>
+  <text x="450" y="313" text-anchor="middle" font-size="13" font-weight="bold" fill="white">Step 5: 代码检查</text>
+  <text x="355" y="347" font-size="11" fill="#555">/lint</text>
+  <text x="430" y="347" font-size="10" fill="#888">静态检查</text>
+  <text x="355" y="367" font-size="11" fill="#555">/fix</text>
+  <text x="430" y="367" font-size="10" fill="#888">自动修复</text>
+  <rect x="355" y="385" width="190" height="14" rx="4" fill="#eff6ff"/>
+  <text x="450" y="395" text-anchor="middle" font-size="9" fill="#3b82f6">doc/lint/lint-*.md</text>
+  <rect x="355" y="402" width="190" height="14" rx="4" fill="#eff6ff"/>
+  <text x="450" y="412" text-anchor="middle" font-size="9" fill="#3b82f6">doc/fix/fix-*.md</text>
+
+  <!-- Arrow 5->6 -->
+  <line x1="570" y1="360" x2="605" y2="360" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow12)"/>
+
+  <!-- Step 6: Verify -->
+  <rect x="610" y="290" width="130" height="140" rx="12" fill="white" filter="url(#shadow12)"/>
+  <rect x="610" y="290" width="130" height="36" rx="12" fill="url(#grad7)"/>
+  <rect x="610" y="312" width="130" height="14" fill="url(#grad7)"/>
+  <text x="675" y="313" text-anchor="middle" font-size="13" font-weight="bold" fill="white">Step 6: 验证</text>
+  <text x="625" y="347" font-size="10" fill="#555">接口自验证</text>
+  <text x="625" y="367" font-size="10" fill="#555">失败自修复</text>
+  <text x="625" y="387" font-size="10" fill="#555">验证闭环</text>
+  <!-- Loop arrow -->
+  <path d="M 675 400 Q 675 420 650 420 Q 625 420 625 400" fill="none" stroke="#8b5cf6" stroke-width="1.5" marker-end="url(#arrow12)"/>
+
+  <!-- Arrow 6->7 -->
+  <line x1="745" y1="360" x2="770" y2="360" stroke="#8b5cf6" stroke-width="2" marker-end="url(#arrow12)"/>
+
+  <!-- Step 7: Ship -->
+  <rect x="775" y="290" width="100" height="140" rx="12" fill="white" filter="url(#shadow12)"/>
+  <rect x="775" y="290" width="100" height="36" rx="12" fill="url(#grad0)"/>
+  <rect x="775" y="312" width="100" height="14" fill="url(#grad0)"/>
+  <text x="825" y="313" text-anchor="middle" font-size="13" font-weight="bold" fill="white">Step 7: 交付</text>
+  <text x="790" y="347" font-size="10" fill="#555">/commit</text>
+  <text x="790" y="367" font-size="10" fill="#555">git push</text>
+  <text x="790" y="387" font-size="10" fill="#555">Merge Request</text>
+  <!-- Checkmark -->
+  <circle cx="825" cy="410" r="12" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5"/>
+  <text x="825" y="415" text-anchor="middle" font-size="14" fill="#10b981">&#x2713;</text>
+
+  <!-- Bottom: Key metrics -->
+  <rect x="30" y="460" width="840" height="90" rx="12" fill="white" filter="url(#shadow12)"/>
+  <text x="450" y="487" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">各步骤产出文档</text>
+  <line x1="50" y1="497" x2="850" y2="497" stroke="#eee" stroke-width="1"/>
+
+  <rect x="50" y="507" width="100" height="28" rx="6" fill="#eef2ff"/>
+  <text x="100" y="525" text-anchor="middle" font-size="9" fill="#667eea" font-weight="bold">doc/kb/</text>
+
+  <rect x="160" y="507" width="115" height="28" rx="6" fill="#f5f0ff"/>
+  <text x="217" y="525" text-anchor="middle" font-size="9" fill="#764ba2" font-weight="bold">requirement.md</text>
+
+  <rect x="285" y="507" width="110" height="28" rx="6" fill="#fff5f5"/>
+  <text x="340" y="525" text-anchor="middle" font-size="9" fill="#e94560" font-weight="bold">tech_design.md</text>
+
+  <rect x="405" y="507" width="100" height="28" rx="6" fill="#fffbeb"/>
+  <text x="455" y="525" text-anchor="middle" font-size="9" fill="#d97706" font-weight="bold">testcase.md</text>
+
+  <rect x="515" y="507" width="90" height="28" rx="6" fill="#ecfdf5"/>
+  <text x="560" y="525" text-anchor="middle" font-size="9" fill="#059669" font-weight="bold">业务代码</text>
+
+  <rect x="615" y="507" width="90" height="28" rx="6" fill="#eff6ff"/>
+  <text x="660" y="525" text-anchor="middle" font-size="9" fill="#3b82f6" font-weight="bold">lint + fix 报告</text>
+
+  <rect x="715" y="507" width="80" height="28" rx="6" fill="#f5f3ff"/>
+  <text x="755" y="525" text-anchor="middle" font-size="9" fill="#8b5cf6" font-weight="bold">验证报告</text>
+
+  <rect x="805" y="507" width="55" height="28" rx="6" fill="#eef2ff"/>
+  <text x="832" y="525" text-anchor="middle" font-size="9" fill="#667eea" font-weight="bold">Git</text>
+
+  <!-- Bottom: Install cards -->
+  <text x="450" y="585" text-anchor="middle" font-size="14" font-weight="bold" fill="#555">工具链安装速查</text>
+
+  <!-- Card 1: Knowledge Base -->
+  <rect x="30" y="600" width="205" height="70" rx="10" fill="url(#grad1)" filter="url(#shadow12)"/>
+  <text x="132" y="624" text-anchor="middle" font-size="12" font-weight="bold" fill="white">Step 0  知识库</text>
+  <rect x="45" y="635" width="175" height="24" rx="6" fill="rgba(255,255,255,0.2)"/>
+  <text x="132" y="651" text-anchor="middle" font-size="9" fill="white" font-family="monospace">@sangfor/agent-rules</text>
+
+  <!-- Card 2: Requirements -->
+  <rect x="245" y="600" width="205" height="70" rx="10" fill="url(#grad2)" filter="url(#shadow12)"/>
+  <text x="347" y="624" text-anchor="middle" font-size="12" font-weight="bold" fill="white">Step 1  需求分析</text>
+  <rect x="260" y="635" width="175" height="24" rx="6" fill="rgba(255,255,255,0.2)"/>
+  <text x="347" y="651" text-anchor="middle" font-size="9" fill="white" font-family="monospace">ai-native-devkits</text>
+
+  <!-- Card 3: Design -->
+  <rect x="460" y="600" width="205" height="70" rx="10" fill="url(#grad3)" filter="url(#shadow12)"/>
+  <text x="562" y="624" text-anchor="middle" font-size="12" font-weight="bold" fill="white">Step 2  方案设计</text>
+  <rect x="475" y="635" width="175" height="24" rx="6" fill="rgba(255,255,255,0.2)"/>
+  <text x="562" y="651" text-anchor="middle" font-size="9" fill="white" font-family="monospace">module-designer</text>
+
+  <!-- Card 4: Development -->
+  <rect x="675" y="600" width="200" height="70" rx="10" fill="url(#grad5)" filter="url(#shadow12)"/>
+  <text x="775" y="624" text-anchor="middle" font-size="12" font-weight="bold" fill="white">Step 4  模块开发</text>
+  <rect x="690" y="635" width="170" height="24" rx="6" fill="rgba(255,255,255,0.2)"/>
+  <text x="775" y="651" text-anchor="middle" font-size="9" fill="white" font-family="monospace">refine + tasks</text>
+
+  <!-- Unified install hint -->
+  <rect x="30" y="685" width="845" height="30" rx="8" fill="#f1f5f9"/>
+  <text x="450" y="705" text-anchor="middle" font-size="10" fill="#64748b">npx ai-native-devkits install command &lt;command-name&gt;    |    npx @sangfor/agent-rules install</text>
+</svg>
