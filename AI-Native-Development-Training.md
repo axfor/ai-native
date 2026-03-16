@@ -4,6 +4,29 @@
 
 ---
 
+## 组织转型总纲
+
+### 五、组织保障
+
+- **自顶向下的目标制定**：将 AI Native 转型目标定义到部门 OKR、业务单元 OKR、个人 OKR 中，作为独立大 O
+- **组建 AI 布道师 + AI Native 虚拟小组**：探索并赋能各业务组落地技能，搭建并优化公共基础设施，带动测试、基础工具等公共能力的完善
+
+### 六、目标及考核要求
+
+- **分批次推进**，AI Native 达成目标：50% → 40% → 30%
+  - **一批次**：认证中台、XOS、PAAS 新组件
+  - **二批次**：AI 数据湖、AI 基建
+  - **三批次**：设备联动、及其他所有业务
+- **转型目标作为该业务单元 TL、架构师、PM 的考核依据、晋升条件**
+
+### 七、技术能力提升和工作模式转变
+
+- **TDD 测试驱动将逐渐变为现实**，开发测试要进一步融合，打通研发流程
+- 部门增加**每周 1-2 次技术分享**，进行 AI Native 实践案例交流、学习
+- 项目管理和架构设计要探索 AI Native 的转变，实现 E2E 的提效和工作模式转变
+
+---
+
 ## 目录
 
 1. [为什么要转型 AI Native](#1-为什么要转型-ai-native)
@@ -960,20 +983,68 @@ $ claude
 
 > **核心原则：让 AI 做「体力活」，人专注「脑力活」。**
 
-### 现场演示项目：统一认证中心 (AuthHub)
+### 现场演示项目：XAuth 统一认证组件
 
-> 完整的现场演示项目位于 `examples/xauth/` 目录，包含从 0 到产品的全流程文档和 Prompt。
-> 讲师按 Prompt 顺序逐步执行，现场用 AI 构建一个集成业界主流认证方式的完整后端服务。
+> 完整的演示项目位于 `project/` 目录，这是一个**真实的、可运行的** Go 后端项目，
+> 通过 AI-Native 工作流从需求到上线全流程构建。讲师可现场演示 AI 如何驱动每个环节。
 
-| 文件 | 内容 |
+#### 项目概况
+
+| 维度 | 说明 |
 |------|------|
-| `01-requirements.md` | 需求文档 — 6 大认证模块、功能清单、验收标准 |
-| `02-architecture.md` | 架构设计 — 技术选型、系统架构图、数据模型、认证流程 |
-| `03-architecture-review.md` | 架构验证 — 安全/性能/可维护性检查清单、风险评估 |
-| `04-development-plan.md` | 开发计划 — 9 个 Sprint、每步可执行的 Prompt |
-| `05-prompts.md` | Prompt 速查 — 11 个即用即粘的完整 Prompt |
+| **技术栈** | Go 1.21+ / PostgreSQL / OAuth2 + OIDC / Docker |
+| **服务架构** | 认证 API (:8080) + 管理后台 API (:9090) + Demo App (:3000) |
+| **代码规模** | 15+ internal 模块（auth, connector, token, mfa, tenant 等） |
 
-**覆盖认证方式**：用户名密码 + JWT / OAuth2 (GitHub, Google) / MFA (TOTP) / API Key + HMAC / RBAC 权限控制
+#### 支持的认证方式
+
+本地账号密码 / Google / Microsoft / 微信 / 钉钉 / 飞书 / OAuth2 + OIDC
+
+#### 项目目录结构
+
+```
+project/
+  ├── cmd/xauth/          # 启动入口
+  ├── internal/            # 业务核心（15 个模块）
+  │   ├── auth/            # 认证引擎
+  │   ├── connector/       # 第三方 IdP 对接
+  │   ├── token/           # JWT/OIDC Token
+  │   ├── mfa/             # 多因子认证
+  │   ├── tenant/          # 多租户
+  │   └── ...
+  ├── api/                 # API 定义
+  ├── web/                 # 前端登录页
+  ├── migrations/          # 数据库迁移
+  ├── configs/             # 配置文件
+  ├── tests/               # 集成测试
+  ├── doc/                 # AI 生成的全流程文档
+  │   ├── kb/              # 知识库（/kb-init 生成）
+  │   ├── ai-requirement-analyst/  # 需求分析产出
+  │   ├── requirement/     # 系统需求文档
+  │   ├── design/          # 概要设计 + API 设计
+  │   ├── testcase/        # 接口测试用例
+  │   ├── develop/         # 开发过程记录
+  │   ├── lint/            # 代码检查报告
+  │   └── fix/             # 修复报告
+  └── prompts/             # AI 开发 Prompt
+      ├── project.md       # 项目整体 Prompt
+      ├── IdP.md           # IdP 对接 Prompt
+      ├── mgr.md           # 管理面 Prompt
+      └── user_mgmt.md     # 用户管理 Prompt
+```
+
+#### AI-Native 开发全流程（已在此项目中实践）
+
+| 步骤 | Skill 命令 | 产出 |
+|------|-----------|------|
+| 0. 知识库生成 | `/kb-init` | `doc/kb/` 知识库文档 |
+| 1. 需求分析 | `/ai-business-analyst` → `/system-analyst` → `/gen-requirement-from-sysreq` | `doc/requirement/requirement.md` |
+| 2. 方案设计 | `/module-designer` | `doc/design/tech_design.md` + `api_design.md` |
+| 3. 测试用例 | `/generate-interface-testcases` | `doc/testcase/testcase.md` |
+| 4. 模块开发 | `/refine-design` → `/generate-tasks` → `/execute-tasks` | 业务代码 |
+| 5. 代码检查 | `/lint` → `/fix` | `doc/lint/` + `doc/fix/` 报告 |
+| 6. 功能自验 | 接口自动化测试 | 测试报告 |
+| 7. 提交发布 | `/commit-push` | Git 提交 + 推送 |
 
 **演示预期效果**：60-90 分钟内用 AI 完成约 8-12 人天的开发工作量。
 
@@ -1120,11 +1191,30 @@ Martin Fowler 在 2025 年对三大 SDD 工具进行了系统分析：
 | **EY** | 探索 SDD 重新定义软件设计 | [EY Insights](https://www.ey.com/en_ie/insights/ai/will-ai-spec-driven-development-redefine-design) |
 | **学术界** | 发表 SDD 学术论文 | [arXiv:2602.00180](https://arxiv.org/abs/2602.00180) |
 
-#### 如何写好 Spec？
+#### 如何写好 Spec？—— Addy Osmani 五大原则框架
 
-参考 Google 前工程总监 Addy Osmani 的 [六大领域框架](https://addyosmani.com/blog/good-spec/)：
+Google 前工程总监 Addy Osmani 基于 GitHub 对 2,500+ Agent 配置文件的研究，提出了 [AI Agent Spec 编写的五大核心原则](https://addyosmani.com/blog/good-spec/)。这是目前业界最系统的 Spec 编写指南。
 
-**领域 1：命令（Commands）**
+**原则 1：先写愿景，让 AI 展开细节（High-Level Vision First）**
+
+> 从简洁的产品简报开始，让 AI 扩展成详细规格。利用模型的展开能力，你掌控方向。
+
+实践方法：先给 AI 一个简洁的方向性描述，让它生成完整的 Spec 草案（目标、功能、约束、计划），然后人工审核调整。Claude Code 的 Plan Mode（只读分析模式）非常适合这一步——强制先规划、后执行。
+
+```
+你：Draft a detailed specification for XAuth covering objectives,
+    features, constraints, and a step-by-step plan.
+
+AI：[生成结构化 Spec 草案：概述、功能列表、技术栈、数据模型...]
+
+你：[审核、修正、补充领域知识] → 定稿 Spec
+```
+
+**原则 2：像 PRD 一样结构化你的 Spec（六大核心领域）**
+
+GitHub 分析 2,500+ Agent 配置文件发现，**有效的 Spec 都覆盖了六大核心领域**：
+
+**领域 1：命令（Commands）** —— 把可执行命令放在最前面，AI 会反复引用
 
 ```markdown
 # 构建与运行
@@ -1135,7 +1225,7 @@ Martin Fowler 在 2025 年对三大 SDD 工具进行了系统分析：
 - npm run db:migrate: 执行 Prisma 数据库迁移
 ```
 
-**领域 2：测试规范（Testing）**
+**领域 2：测试规范（Testing）** —— 测试框架、文件位置、覆盖率要求
 
 ```markdown
 # 测试要求
@@ -1146,7 +1236,7 @@ Martin Fowler 在 2025 年对三大 SDD 工具进行了系统分析：
 - Mock：外部 API 一律 Mock，不依赖网络
 ```
 
-**领域 3：项目结构（Structure）**
+**领域 3：项目结构（Structure）** —— 明确的目录映射
 
 ```markdown
 # 目录规范
@@ -1160,7 +1250,7 @@ src/
   utils/        # 工具函数
 ```
 
-**领域 4：代码风格（Style）**
+**领域 4：代码风格（Style）** —— 一个真实代码示例胜过三段文字描述
 
 ```markdown
 # 风格约定
@@ -1172,7 +1262,7 @@ src/
 - 错误处理：统一 AppError 类，含 code + message + statusCode
 ```
 
-**领域 5：Git 工作流（Workflow）**
+**领域 5：Git 工作流（Workflow）** —— 完整拼写出来，不要让 AI 猜
 
 ```markdown
 # Git 规范
@@ -1182,13 +1272,14 @@ src/
 - 主干：main 分支受保护，不可直接推送
 ```
 
-**领域 6：边界（Boundaries）**
+**领域 6：边界（Boundaries）** —— GitHub 研究发现最有用的单条约束："Never commit secrets"
 
 ```markdown
-# 行为约束
+# 三层行为边界
 Always（总是做）：
   - 验证所有用户输入
   - 使用参数化 SQL 查询
+  - 提交前运行测试
   - 敏感数据加密存储
 
 Ask（先确认）：
@@ -1200,7 +1291,78 @@ Never（绝不做）：
   - 硬编码密钥或凭证
   - 在日志中输出敏感信息
   - 跳过测试直接合并
+  - 编辑 node_modules/ 或 CI 配置
 ```
+
+**原则 3：模块化拆分，不要写巨型 Prompt（Modular Prompts）**
+
+> 大 Prompt 会触发"指令诅咒"——堆叠越多要求，模型对每条的遵守率越低。
+
+| 策略 | 做法 |
+|------|------|
+| **按阶段拆分** | 后端 API Spec 和前端 UI Spec 分开，做后端时不喂前端 Spec |
+| **摘要索引** | 创建浓缩大纲 + 引用标记，如 `Security: see full spec §4.2` |
+| **子代理分工** | 数据库设计用 Agent A，API 编码用 Agent B，各自只看相关部分 |
+
+单代理 vs 多代理对比：
+
+```
+                    单代理                  多代理/并行
+  -------           ------                  ----------
+  优势              简单、易调试             高吞吐、领域专精
+  挑战              大项目上下文过载          协调开销、潜在冲突
+  适用              独立模块、中小项目        大代码库、独立功能并行
+```
+
+**原则 4：内建自检、护栏和领域知识（Self-Checks & Expertise）**
+
+让 Spec 既是待办清单，也是质量控制指南：
+
+| 手段 | 示例 |
+|------|------|
+| **自动验证** | "实现完成后，对照 Spec 逐条确认所有需求都已满足" |
+| **LLM-as-Judge** | 用第二个 Agent 审查第一个 Agent 的产出 |
+| **一致性测试** | YAML 定义的输入/输出契约，任何实现都必须通过 |
+| **领域知识注入** | "auth 库 v2.1 有 token 过期 bug，必须用 v2.2+" |
+
+关键洞察：**把你的专业知识编码进 Spec**。AI 擅长执行，但领域陷阱只有经验丰富的工程师知道。
+
+```markdown
+# 领域知识注入示例
+Security Requirements:
+  Use HTTPS for all endpoints.
+  Protect API keys via environment variables.
+
+Known Pitfall: auth 库 v2.1 有 token 过期 bug，
+  必须使用 v2.2+。
+```
+
+**原则 5：持续测试、迭代演进 Spec（Test & Evolve）**
+
+> Spec 是活文档，不是写完就扔的一次性产物。
+
+```
+编码 --> 测试 --> 失败? --> 更新 Spec --> 重新同步 Agent --> 再次编码
+  ^                                                          |
+  +----------------------------------------------------------+
+```
+
+核心实践：
+- **持续测试**：每个里程碑后立即验证，不要等到全部完成
+- **迭代 Spec**：发现遗漏立即更新，并显式告诉 Agent "Spec 已更新如下...请调整"
+- **版本控制**：Spec 文件提交 Git，Agent 可通过 `git diff` 理解变更
+- **上下文管理**：大型 Spec 用 RAG 或 MCP 按需加载相关部分，而非全量灌入
+
+#### 常见陷阱（来源：[Addy Osmani](https://addyosmani.com/blog/good-spec/)）
+
+| 陷阱 | 说明 |
+|------|------|
+| 模糊 Prompt | "做个酷炫的东西"没有锚点，要明确输入、输出、约束 |
+| 超长上下文无摘要 | 50 页不分层灌入效果差，用摘要或 RAG |
+| 跳过人工审查 | 即使测试通过，关键路径仍需 Review；AI 可能产出"纸牌屋"代码 |
+| 混淆原型与生产 | Vibe Coding 适合探索，生产需要规范、Spec、测试、Review |
+| 遗漏六大领域 | Commands/Testing/Structure/Style/Workflow/Boundaries 是完备性清单 |
+| 指令堆叠过多 | 同时给太多指令会导致每条的遵守率下降（指令诅咒） |
 
 #### SDD 与 Claude Code 的结合
 
@@ -1512,6 +1674,14 @@ cd everything-claude-code
 | XOS | XOS管理面（K8s管理面产品） | 高 | 宇文佳/焦利涛 | 艾小祥 | 新功能90% AI-Native 达成 | 发布缩短30%，人力减少30% |
 | LMT | 排障工具 | 高 | 张超 | 艾小祥 | 90% AI-Native 达成 | 发布缩短30%，人力减少30% |
 | 数据中台 | AI Agent开发平台 | 高 | 陈飞/孙涛 | 艾小祥 | 80% AI-Native 达成 | 发布缩短30%，人力减少30% |
+
+### 专项激励措施
+
+| 激励方向 | 说明 |
+|----------|------|
+| **业务提效** | 针对 AI Native 对业务目标提效的个人和团队（如端到端提效，硅含量） |
+| **实践分享** | 针对好的实践案例或技术分享 |
+| **基础设施** | 针对公共基础设施建设的优秀个人和团队 |
 
 ### AI Coding 达成路径：从需求到交付
 
